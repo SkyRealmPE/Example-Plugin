@@ -7,7 +7,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 
-class MainClass extends PluginBase{
+class RTools extends PluginBase{
 
 	public function onLoad(){
 		$this->getLogger()->info( "I've been loaded!");
