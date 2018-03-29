@@ -10,6 +10,6 @@ description: General Commands
 website: https://github.com/Jackthehaxk21/Example-Plugin
 commands:
  ping:
-  description: "This is a test command"
+  description: "Ping the RTools Plugin"
   usage: "/ping"
   permission: RTools.ping
