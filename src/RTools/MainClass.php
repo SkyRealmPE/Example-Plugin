@@ -18,7 +18,7 @@ class MainClass extends PluginBase {
 		$this->getLogger()->info("I've been disabled!");
 	}
 
-	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		$commandName = $command->getName();
 		if($commandName === "ping"){
 		  $sender->sendMessage("Pong!");
