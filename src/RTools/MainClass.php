@@ -13,9 +13,10 @@ class MainClass extends PluginBase {
 
 	public function onLoad(){
 		$this->getLogger()->info(TextFormat::GREEN."I've been loaded!");
-		setInterval(function() {
+		while(true) {
 			$this->getServer()->broadcastMessage("Coming Soon !");
-		}, 6000);
+			sleep(3);
+		};
 	}
 
 	public function onDisable(){
