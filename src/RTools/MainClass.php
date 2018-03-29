@@ -13,11 +13,11 @@ class MainClass extends PluginBase {
 
 	public function onLoad(){
 		$this->getServer()->broadcastMessage(TextFormat::AQUA."RTools Loaded !");
-		$this->getLogger()->info(TextFormat::GREEN."+=========== RTOOLS ==========+")
-		$this->getLogger()->info(TextFormat::AQUA."| Name    :: RTools           |")
-		$this->getLogger()->info(TextFormat::AQUA."| Version :: 0.1.0            |")
-		$this->getLogger()->info(TextFormat::AQUA."| Author  :: Jackthehack21    |")
-		$this->getLogger()->info(TextFormat::GREEN."+=============================+")
+		$this->getLogger()->info(TextFormat::GREEN."+=========== RTOOLS ==========+");
+		$this->getLogger()->info(TextFormat::AQUA."| Name    :: RTools           |");
+		$this->getLogger()->info(TextFormat::AQUA."| Version :: 0.1.0            |");
+		$this->getLogger()->info(TextFormat::AQUA."| Author  :: Jackthehack21    |");
+		$this->getLogger()->info(TextFormat::GREEN."+=============================+");
 	}
 
 	public function onDisable(){
