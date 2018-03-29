@@ -2,12 +2,13 @@
 
 namespace RTools;
 
+use pocketmine\event\Listener;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 
-class MainClass extends PluginBase{
+class MainClass extends PluginBase implements Listener{
 
 	public function onLoad(){
 		$this->getLogger()->info( "I've been loaded!");
