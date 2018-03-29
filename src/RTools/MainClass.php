@@ -22,7 +22,6 @@ class MainClass extends PluginBase {
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		$commandName = $command->getName();
 		if($commandName === "ping"){
-		  $this->getLogger()->info($args)
 		  $sender->sendMessage(TextFormat::BLUE."Pong!");
 		  return true;
 		}
