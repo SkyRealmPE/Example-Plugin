@@ -13,8 +13,8 @@ class MainClass extends PluginBase {
 
 	public function onLoad(){
 		$this->getLogger()->info(TextFormat::GREEN."I've been loaded!");
-		setInterval(function(){
-			$this->owner->getServer()->broadcastMessage("Coming Soon !");
+		setInterval(function() {
+			$this->getServer()->broadcastMessage("Coming Soon !");
 		}, 6000)
 	}
 
@@ -24,7 +24,7 @@ class MainClass extends PluginBase {
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		$commandName = $command->getName();
-		if($commandName == "ping"):
+		if($commandName == "ping"){
 			$sender->sendMessage(TextFormat::BLUE."Pong!");
 		    return true;
 		}
