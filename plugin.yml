@@ -1,5 +1,5 @@
 #name, main, version and api are required
-name: Jacks Plugin
+name: Jacks_Plugin
 main: ExamplePlugin\MainClass
 version: 0.01
 api: [3.0.0-ALPHA11]
