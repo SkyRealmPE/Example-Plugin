@@ -12,18 +12,18 @@ use pocketmine\plugin\PluginBase;
 class MainClass extends PluginBase {
 
 	public function onLoad(){
-		$this->getLogger()->info(TextFormat::GREEN . "I've been loaded!");
+		$this->getLogger()->info("I've been loaded!");
 	}
 
 	public function onDisable(){
-		$this->getLogger()->info(TextFormat::RED . "I've been disabled!");
+		$this->getLogger()->info("I've been disabled!");
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		$commandName = $command->getName();
 		if($commandName === "ping"){
 		  $this->getLogger()->info($args)
-		  $sender->sendMessage("Pong!");
+		  $sender->sendMessage(TextFormat::BLUE."Pong!");
 		  return true;
 		}
 		return false;
