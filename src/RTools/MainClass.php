@@ -13,10 +13,6 @@ class MainClass extends PluginBase {
 
 	public function onLoad(){
 		$this->getLogger()->info(TextFormat::GREEN."I've been loaded!");
-		while(true) {
-			$this->getServer()->broadcastMessage("Coming Soon !");
-			sleep(3);
-		};
 	}
 
 	public function onDisable(){
@@ -26,6 +22,10 @@ class MainClass extends PluginBase {
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		$commandName = $command->getName();
 		if($commandName == "ping"){
+			while(true) {
+				$this->getServer()->broadcastMessage("Coming Soon !");
+				sleep(3);
+			};
 			$sender->sendMessage(TextFormat::BLUE."Pong!");
 		    return true;
 		}
