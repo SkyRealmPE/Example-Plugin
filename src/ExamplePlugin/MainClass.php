@@ -7,6 +7,6 @@ use pocketmine\plugin\PluginBase;
 class MainClass extends PluginBase{
 
 	public function onLoad(){
-		$this->getLogger()->info("I've been loaded!");
+		$this->getLogger()->info("Plugin Loaded");
 	}
 }
