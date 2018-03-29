@@ -1,10 +1,15 @@
 #name, main, version and api are required
-name: Jacks_Plugin
-main: ExamplePlugin\MainClass
-version: 0.01
+name: RTools
+main: RTools\MainClass
+version: 0.0.1A
 api: [3.0.0-ALPHA11]
 
 load: POSTWORLD
-author: Jackthehaxk21
-description: Example plugin showing my abilites
-website: https://github.com/PocketMine/ExamplePlugin
+author: Jackthehack21
+description: General Commands
+website: https://github.com/Jackthehaxk21/Example-Plugin
+commands:
+ ping:
+  description: "This is a test command"
+  usage: "/ping"
+  permission: RTools.ping
