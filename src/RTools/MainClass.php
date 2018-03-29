@@ -19,11 +19,11 @@ class MainClass extends PluginBase {
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
-		if(strtolower($command->getName()) === "ping"){
-			$sender->sendMessage('Pong');
-			return true;
+		$commandName = $command->getName();
+		if($commandName === "ping"){
+		  $sender->sendMessage("Pong!");
+		  return true;
 		}
-	
 		return false;
 	}
 }
