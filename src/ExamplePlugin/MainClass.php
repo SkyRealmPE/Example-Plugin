@@ -11,7 +11,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
 
-class MainClass extends PluginBase implements Listener{
+class MainClass extends PluginBase{
 
 	public function onLoad(){
 		$this->getLogger()->info(TextFormat::WHITE . "I've been loaded!");
