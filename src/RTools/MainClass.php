@@ -21,7 +21,7 @@ class MainClass extends PluginBase {
 	}
 
 	public function onDisable(){
-		$this->getServer()->broadcastMessage(TextFormat::PURPLE."RTools Disabled !");
+		$this->getServer()->broadcastMessage(TextFormat::RED."RTools Disabled !");
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
